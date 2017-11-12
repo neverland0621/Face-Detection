@@ -1,0 +1,14 @@
+#Using the HOG detetctor the values obtained are (on the training sample only; taking too long to exceute on the test data)
+Initial classifier performance on train data:
+  accuracy:   0.985
+  true  positive rate: 0.385
+  false positive rate: 0.002
+  true  negative rate: 0.599
+  false negative rate: 0.013
+
+feature dimesions :
+positive features: 6713 X 600
+negative features: 10138 X 600
+
+Takes too long to execute on the test set.
+

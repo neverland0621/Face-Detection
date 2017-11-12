@@ -1,0 +1,28 @@
+1. There are several detections made for an ensemble of trees for the same given threshold value.
+2. It takes a really long time to execute.Since they are non linear classifiers.
+3. The parameter I have considered (and are in the submission) are:
+Maximum Number of splits : 1
+Min number of leaves : 100
+Min number of parents : 80
+Number of weak learners used is : 3
+4. Number of detections made is high but the number of bounding boxes obtained that are greater than the confidence values are
+low compared to the number of detections made.
+5. When I tried with Maximum Number of splits : 4 and Min number of leaves : 2, I got a very low precision value of 0.0011. So I came to
+the conclusion that maybe linear classifiers are better than the non-linear classifier for this dataset, or that the ensemble of
+decision trees is not a good classifier. Another experiment when I did not specify the number of leaves (it takes this to be the number
+of samples -1) and with all the other conditions being the same, the performance was even worse - 0.011
+6. run_detector_tree is used to code the run detector for the tree. It has the predictions made for the learnt tree.
+7. Many bounding boxes predicted and hence increasing the false positive ratio. : Precision:0.009
+
+ classreg.learning.classif.	
+             ResponseName: 'Y'
+    CategoricalPredictors: []
+               ClassNames: [-1 1]
+           ScoreTransform: 'none'
+          NumObservations: 16851
+               NumTrained: 3
+                   Method: 'AdaBoostM1'
+             LearnerNames: {'Tree'}
+     ReasonForTermination: 'Terminated normally after completing the requested number of training cycles.'
+                  FitInfo: [3x1 double]
+       FitInfoDescription: {2x1 cell}

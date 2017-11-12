@@ -1,0 +1,15 @@
+Initial classifier performance on train data:
+  accuracy:   0.999
+  true  positive rate: 0.398
+  false positive rate: 0.001
+  true  negative rate: 0.600
+  false negative rate: 0.000
+
+the number of samples computed were: 
+all features: 16851 X 18268
+w: 18268 X 1
+b: -1
+
+The accuracy did not seem to change drastically with the addition of the different features.
+
+Takes too long to execute on the test set, since too many features (sift, phow) and hog being computed for each image patch.
