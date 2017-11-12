@@ -1,0 +1,6 @@
+1. The visualizations are stored in the visualizations folder where there are folders consisting of all the experiments I have tried out.
+2. There are results in each of these folders that depict what are the results obtined for that experiment. However most of these results have
+been included in the report as well.
+3. There are seperate files for each of the experimnets  eg. run_detector(base implementation),run_detector_extrafeatures(for the 
+additional descriptor features), run_detector_hog(for the HoG implementation), run_detector_tree(for the classifier). This follows for the 
+other files as well.
